@@ -1,8 +1,8 @@
-#echo "installing docker..."
-#sudo apt update && sudo apt install docker.io -y && sudo apt install docker-compose -y
-#echo "installing certbot"
-#sudo snap install --classic certbot
-#sudo ln -s /snap/bin/certbot /usr/bin/certbot
+echo "installing docker..."
+sudo apt update && sudo apt install docker.io -y && sudo apt install docker-compose -y
+echo "installing certbot"
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
 echo "Do you want to use existing .env and docker-compose.yml files?"
 echo
 echo -e "Type \e[1;35m'Y/y'\e[0m and press ENTER to use existing .env and docker-compose.yml files"
