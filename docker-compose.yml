@@ -45,6 +45,9 @@
         - wordpress:/var/www/html
         - ./nginx-conf:/etc/nginx/conf.d
         - /etc/letsencrypt:/etc/letsencrypt
+      env_file: .env
+      environment:
+        - DOMAIN_NAME=$DOMAIN_NAME
       networks:
         - app-network
   volumes:
