@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "installing docker..."
 sudo apt update && sudo apt install docker.io -y && sudo apt install docker-compose -y
 echo "installing certbot"
