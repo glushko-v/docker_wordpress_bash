@@ -76,6 +76,9 @@ case "$INPUT" in
              CHECK=1
              esac
   done
+  echo "Updating nginx.conf..."
+  echo
+  sed -i -e 's/DOMAIN/$DOMAIN_NAME/g' nginx.conf
   echo -e "Do you want to issue SSL certificates? Type \e[1;35m'Y/y'\e[0m and press ENTER to proceed or type any letter and press ENTER to skip"
   read INPUT
   case "$INPUT" in
